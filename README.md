@@ -1,4 +1,4 @@
-# House Cats of the World
+# Cat Facts
 
 Cats are awesome because they are low maintenance, funny, and cute. They make greats pets and nearly everyone has seen one or owns one so they are really relatable.
 
@@ -37,7 +37,7 @@ The website is targeted at kids who want to find out more information about thei
 ## To-do
 
 - [x] Research
-- [ ] Content organization
+- [x] Content organization
 - [ ] Tasks & priorities
 - [ ] Prototype
 - [ ] Style exploration
