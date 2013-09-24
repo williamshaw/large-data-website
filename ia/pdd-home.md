@@ -4,12 +4,13 @@
 
 
 - Billboard of random, special cat breed
-- Overview of house cats
+- Buckets with three or for featured links
 - Search
-- 
+
 
 ## 2. Medium
 
+- Overview of house cats
 - Website branding, logo
 - Primary navigation
 - Secondary Links to Articles
