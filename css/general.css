@@ -78,12 +78,11 @@ header {
 .nav-top a {
 	text-decoration: none;
 	color: #fff;
+  font-weight: bold;
 }
 
 .nav-top a:hover {
-	text-decoration: underline;
 	color: #00abc9;
-	font-weight: bold;
 }
 
 .search-bar {
@@ -96,26 +95,68 @@ strong {
 	color:	#00abc9;
 }
 
-.about-us {
+p {
+  margin: 0;
+}
+
+.about-us-title {
+  font-size: 2.5em;
+  margin: 0;
+  line-height: 35px;
+  color:  #00abc9;
+}
+
+.about-us-text {
 	max-width: 500px;
+  margin: 0;
 }
 
 .bucket-container {
-	margin-top: 1.5em;
+	margin-top: 1em;
 }
 
 .bucket-headline {
 	background-color: #00abc9;
 	opacity: 0.8;
 	position: relative;
-	top: -45px;
+	top: -30px;
 }
 
 .bucket-container h2 {
 	color: #fff;
 	margin: 0;
-	font-size: 1.125em;
+	font-size: 0.75em;
 	padding: 0.5em;
+}
+
+@media only screen and (min-width: 20em) {
+  .bucket-container h2 {
+      font-size: 1.125em;
+    }
+  .bucket-headline {
+    top: -45px;
+    }
+  }
+
+h3 {
+  margin: 0;
+  color:  #00abc9;
+}
+
+.top-stories {
+  margin-top: -1.5em;
+  margin-bottom: 1em;
+}
+
+.more {
+  font-weight: bold;
+  color: #00859c;
+  display: block;
+  text-align: right;
+}
+
+.top-stories p {
+  max-width: 350px;
 }
 
 footer {
