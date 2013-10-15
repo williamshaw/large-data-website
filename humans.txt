@@ -1,0 +1,56 @@
+* TEAM */
+
+
+ William Shaw
+
+
+Site: williamshaw.ca
+
+
+Twitter: @willshawdesign
+
+
+Location: Ottawa, Canada
+
+
+
+Thomas J Bradley
+
+
+Site: thomassite.ca
+
+
+Twitter: @wthomastwitter
+
+
+Location: Ottawa, Canada
+
+
+                        [...]
+
+
+
+/* THANKS */
+
+
+Name: Algoqnuin College
+
+
+
+                        [...]
+
+
+
+/* SITE */
+
+
+Last update: 2013/10/08
+
+
+Standards: HTML5, CSS3,..
+
+
+Components: HTML
+
+
+Software: Software used for the development

@@ -1,0 +1,4 @@
+Sitemap: http://cat-facts.ca/sitemap.xml
+
+# User-Agent: *
+# Disallow:
