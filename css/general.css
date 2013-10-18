@@ -211,6 +211,11 @@ footer {
 	width: 100%;
 	margin: 0;
 }
+
+.float-right {
+  float: right;
+}
+
 footer p {
 	text-align: center;
 	background-color: rgba(0,255,153,0);
