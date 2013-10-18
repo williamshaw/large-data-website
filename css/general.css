@@ -13,7 +13,7 @@ html {
   margin: 0;
   padding: 0;
 
-  font: normal 100%/1.5 Gotham, sans-serif;
+  font: normal 100%/1.5 Helvetica, sans-serif;
   font-weight: 400;
 }
 
@@ -96,7 +96,10 @@ strong {
 }
 
 p {
-  margin: 0;
+margin: 0;
+color: #585858;
+font-weight: 300;
+margin-bottom: 1em;
 }
 
 .about-us-title {
@@ -129,6 +132,10 @@ p {
 	padding: 0.5em;
 }
 
+.bucket-container a {
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 20em) {
   .bucket-container h2 {
       font-size: 1.125em;
@@ -141,6 +148,11 @@ p {
 h3 {
   margin: 0;
   color:  #00abc9;
+}
+
+h4 {
+  margin: 0;
+  color: #5E5E5E;
 }
 
 .top-stories {
@@ -157,6 +169,10 @@ h3 {
 
 .top-stories p {
   max-width: 350px;
+}
+
+.article-title {
+  margin: 0;
 }
 
 footer {
@@ -315,4 +331,10 @@ footer p {
 
 .clearfix:after {
 	clear: both;
+}
+
+@media only screen and (min-width: 60em) {
+  .left-spacer {
+    padding-left: 25%;
+  }
 }
