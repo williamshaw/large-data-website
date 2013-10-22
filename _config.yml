@@ -1,3 +1,4 @@
 markdown: redcarpet
 baseurl: /large-data-website
 exclude: ['README.md', 'personas.md', 'ia']
+permalink: pretty
