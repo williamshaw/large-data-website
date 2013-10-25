@@ -102,6 +102,12 @@ font-weight: 300;
 margin-bottom: 1em;
 }
 
+.max-width ul {
+  color: #585858;
+  font-weight: 300;
+  margin: 0 0 1em;
+}
+
 .about-us-title {
   font-size: 2.5em;
   margin: 0;
@@ -153,6 +159,12 @@ h3 {
 h4 {
   margin: 0;
   color: #5E5E5E;
+}
+
+h5 {
+  margin: 0;
+  color: #5E5E5E;
+  font-weight: 700;
 }
 
 .top-stories {
@@ -212,8 +224,21 @@ footer {
 	margin: 0;
 }
 
-.float-right {
-  float: right;
+blockquote {
+  margin-left: 0.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #8cc63e;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 520px;
+}
+
+cite {
+  color: #585858;
+  max-width: 520px;
+  display: block;
+  text-align: right;
 }
 
 footer p {
@@ -232,7 +257,7 @@ footer p {
 
 .max-width {
   max-width: 70em;
-  margin: 0.75em auto 0;
+  margin: 0 auto 0;
 }
 
 /*Grid System!!!*/
@@ -346,5 +371,21 @@ footer p {
 @media only screen and (min-width: 60em) {
   .left-spacer {
     padding-left: 25%;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  .float-right {
+  float: right;
+  }
+
+  .float-left {
+  float: left;
+  }
+
+  .width-half {
+  width:40%;
+  display: inline-block;
+  margin: 0 0 0.5em 0.5em;
   }
 }
