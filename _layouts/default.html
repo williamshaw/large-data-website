@@ -12,7 +12,7 @@
     <meta property="og:site_name" content="Cat Facts">
     <meta property="og:description" content="Cat care can be tricky. Don't worry we got you covered!">
      <!-- Twitter -->
-    <meta property="twitter:card" content="Cats are awesome** and more popular then ever. If you are thinking about getting a cat or would like to get to know your cat better this is a good place to start. We have tons of info on different types of cats and cat care.">
+    <meta property="twitter:card" content="summary">
     <meta property="twitter:title" content="{{page.title}}">
     <meta property="twitter:url" content="{{page.url}}">
     <meta property="twitter:image" content="http://williamshaw.github.io/large-data-website/img/twitter.jpg">
@@ -27,7 +27,11 @@
   <header class="grid clearfix">
     <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
         <div class="unit-spacer">
-           <h1 class="logo-wrapper"><a href="index.html" class="logo" rel="home">cat-facts.ca</a></h1>
+            {% if page.url == '/' %}
+              <h1 class="logo-wrapper"><a href="{{site.baseurl}}/" class="logo" rel="home">cat-facts.ca</a></h1>
+            {% else %}
+              <strong class="logo-wrapper"><a href="{{site.baseurl}}/" class="logo" rel="home">cat-facts.ca</a></strong>
+            {% endif %}
         </div>
     </div>
 
@@ -37,16 +41,17 @@
         <input type="search" placeholder="Search" class="search-bar unit-s-hidden">
        <nav class="nav-top unit-s-hidden unit-m-hidden">
           <ul>
-             <li><a href="{{site.baseurl/}}/types/">Cat Types</a></li>
-             <li><a href="{{site.baseurl/}}/care/">Cat Care</a></li>
-             <li><a href="{{site.baseurl/}}/culture/">Cats in Culture</a></li>
+             <li><a href="{{site.baseurl}}/types/">Cat Types</a></li>
+             <li><a href="{{site.baseurl}}/care/">Cat Care</a></li>
+             <li><a href="{{site.baseurl}}/culture/">Cats in Culture</a></li>
           </ul>
        </nav>
       </div>
     </div>
   </header>
-
-{{content}}
+  <div class="max-width">
+    {{content}}
+  </div>
 
   <footer class="grid">
   <div class="unit unit-s-1 unit-m-1 unit-l-1">
