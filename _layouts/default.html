@@ -41,8 +41,8 @@
         <input type="search" placeholder="Search" class="search-bar unit-s-hidden">
        <nav class="nav-top unit-s-hidden unit-m-hidden">
           <ul>
-             <li><a href="{{site.baseurl}}/types/">Cat Types</a></li>
-             <li><a href="{{site.baseurl}}/care/">Cat Care</a></li>
+             <li><a href="{{site.baseurl}}/types/" class="{% if page.categories == 'cat-types' %}current{% endif %}">Cat Types</a></li>
+             <li><a href="{{site.baseurl}}/care/" class="{% if page.categories == 'cat-care' %} {% endif %}">Cat Care</a></li>
              <li><a href="{{site.baseurl}}/culture/">Cats in Culture</a></li>
           </ul>
        </nav>
