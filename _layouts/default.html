@@ -3,7 +3,7 @@
 <head>
   <meta charset=utf-8>
   <title>{{page.title}} — Cats rock find out why!; Ottawa Canada</title>
-  <link href="{{site.baseurl}}/css/general.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/cat-facts.css" rel="stylesheet">
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{page.title}}">
@@ -37,9 +37,9 @@
 
    <div class="unit unit-s-1-4 unit-m-2-3 unit-l-2-3">
       <div class="unit-spacer">
-       <img src="{{site.baseurl}}/img/navtoggle.svg" class="nav-toggle unit-l-hidden" alt="#">
+        <a href="#nav" class="nav-btn unit-l-hidden" data-state="inactive">Navigate</a>
         <input type="search" placeholder="Search" class="search-bar unit-s-hidden">
-       <nav class="nav-top unit-s-hidden unit-m-hidden">
+       <nav class="nav nav-top" data-state="collapsed">
           <ul>
              <li><a href="{{site.baseurl}}/types/" class="{% if page.categories == 'cat-types' %}current{% endif %}">Cat Types</a></li>
              <li><a href="{{site.baseurl}}/care/" class="{% if page.categories == 'cat-care' %} {% endif %}">Cat Care</a></li>
@@ -76,6 +76,8 @@
       <p class="copyright">&#169; 2013 cat-facts.ca. All Rights Reserved.</p>
   </div>
   </footer>
+
+  <script src="{{site.baseurl}}/js/toggle-nav.js"></script>
 
 </body>
 </html>
