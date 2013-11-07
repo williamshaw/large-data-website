@@ -23,8 +23,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="Cat care can be tricky. Don't worry we got you covered!">
 </head>
-<body>
-  <header class="grid clearfix">
+<body id="top">
+
+  <ul class="skiplinks">
+    <li><a href="#main">Skip to primary content</a></li>
+    <li><a href="#complementary">Skip to secondary content</a></li>
+    <li><a href="#navigation">Skip to navigation</a></li>
+  </ul>
+
+  <header class="grid clearfix" role="banner">
     <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
         <div class="unit-spacer">
             {% if page.url == '/' %}
@@ -39,7 +46,7 @@
       <div class="unit-spacer">
        <img src="img/navtoggle.svg" class="nav-toggle unit-l-hidden" alt="#">
         <input type="search" placeholder="Search" class="search-bar unit-s-hidden">
-       <nav class="nav-top unit-s-hidden unit-m-hidden">
+       <nav class="nav-top unit-s-hidden unit-m-hidden" id="navigation">
           <ul>
              <li><a href="{{site.baseurl}}/types/">Cat Types</a></li>
              <li><a href="{{site.baseurl}}/care/">Cat Care</a></li>
@@ -49,7 +56,7 @@
       </div>
     </div>
   </header>
-  <div class="max-width">
+  <div class="max-width" role="main" id="main">
     {{content}}
   </div>
 
@@ -73,7 +80,7 @@
           </a>
         </li>
       </ol>
-      <p class="copyright">&#169; 2013 cat-facts.ca. All Rights Reserved.</p>
+      <p class="copyright" role="contentinfo">&#169; 2013 cat-facts.ca. All Rights Reserved.</p>
   </div>
   </footer>
 
