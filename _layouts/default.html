@@ -3,25 +3,25 @@
 <head>
   <meta charset=utf-8>
   <title>{{page.title}} — Cats rock find out why!; Ottawa Canada</title>
-  <link href="{{site.baseurl}}/css/general.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/cat-facts.css" rel="stylesheet">
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{page.title}}">
     <meta property="og:url" content="{{page.url}}">
     <meta property="og:image" content="http://williamshaw.github.io/large-data-website/img/facebook.jpg">
     <meta property="og:site_name" content="Cat Facts">
-    <meta property="og:description" content="Cat care can be tricky. Don't worry we got you covered!">
+    <meta property="og:description" content="{{page.description}}">
      <!-- Twitter -->
     <meta property="twitter:card" content="summary">
     <meta property="twitter:title" content="{{page.title}}">
     <meta property="twitter:url" content="{{page.url}}">
     <meta property="twitter:image" content="http://williamshaw.github.io/large-data-website/img/twitter.jpg">
-    <meta property="twitter:description" content="Cat care can be tricky. Don't worry we got you covered!">
+    <meta property="twitter:description" content="{{page.description}}">
 
     <meta name="handheldfriendly" content="true">
     <meta name="mobileoptimized" content="240">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Cat care can be tricky. Don't worry we got you covered!">
+    <meta name="description" content="{{page.description}}">
 </head>
 <body>
   <header class="grid clearfix">
@@ -37,12 +37,12 @@
 
    <div class="unit unit-s-1-4 unit-m-2-3 unit-l-2-3">
       <div class="unit-spacer">
-       <img src="img/navtoggle.svg" class="nav-toggle unit-l-hidden" alt="#">
+        <a href="#nav" class="nav-btn unit-l-hidden" data-state="inactive">Navigate</a>
         <input type="search" placeholder="Search" class="search-bar unit-s-hidden">
-       <nav class="nav-top unit-s-hidden unit-m-hidden">
+       <nav class="nav nav-top" data-state="collapsed">
           <ul>
-             <li><a href="{{site.baseurl}}/types/">Cat Types</a></li>
-             <li><a href="{{site.baseurl}}/care/">Cat Care</a></li>
+             <li><a href="{{site.baseurl}}/types/" class="{% if page.categories == 'cat-types' %}current{% endif %}">Cat Types</a></li>
+             <li><a href="{{site.baseurl}}/care/" class="{% if page.categories == 'cat-care' %} {% endif %}">Cat Care</a></li>
              <li><a href="{{site.baseurl}}/culture/">Cats in Culture</a></li>
           </ul>
        </nav>
@@ -59,23 +59,25 @@
       <ol class="social-media">
         <li>
           <a href="#" rel="external">
-              <img src="img/facebook.svg" alt="facebook">
+              <img src="{{site.baseurl}}/img/facebook.svg" alt="facebook">
           </a>
         </li>
         <li>
           <a href="#" rel="external">
-              <img src="img/twitter.svg" alt="twitter">
+              <img src="{{site.baseurl}}/img/twitter.svg" alt="twitter">
           </a>
         </li>
         <li>
           <a href="#" rel="external">
-            <img src="img/youtube.svg" alt="youtube">
+            <img src="{{site.baseurl}}/img/youtube.svg" alt="youtube">
           </a>
         </li>
       </ol>
       <p class="copyright">&#169; 2013 cat-facts.ca. All Rights Reserved.</p>
   </div>
   </footer>
+
+  <script src="{{site.baseurl}}/js/toggle-nav.js"></script>
 
 </body>
 </html>
