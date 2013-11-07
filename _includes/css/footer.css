@@ -65,3 +65,7 @@ footer p {
 .copyright {
   padding-bottom: 1em;
 }
+
+a:focus {
+  outline: 2px solid #000;
+}

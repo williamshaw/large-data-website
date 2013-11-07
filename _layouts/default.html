@@ -24,7 +24,13 @@
     <meta name="description" content="{{page.description}}">
 </head>
 <body>
-  <header class="grid clearfix">
+  <ul class="skiplinks">
+    <li><a href="#main">Skip to primary content</a></li>
+    <li><a href="#complementary">Skip to secondary content</a></li>
+    <li><a href="#navigation">Skip to navigation</a></li>
+  </ul>
+
+  <header class="grid clearfix" role="banner" id="navigation">
     <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
         <div class="unit-spacer">
             {% if page.url == '/' %}
@@ -49,7 +55,7 @@
       </div>
     </div>
   </header>
-  <div class="max-width">
+  <div class="max-width" role="main" id="main">
     {{content}}
   </div>
 
@@ -73,7 +79,7 @@
           </a>
         </li>
       </ol>
-      <p class="copyright">&#169; 2013 cat-facts.ca. All Rights Reserved.</p>
+      <p class="copyright" role="contentinfo">&#169; 2013 cat-facts.ca. All Rights Reserved.</p>
   </div>
   </footer>
 
