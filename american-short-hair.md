@@ -1,8 +1,10 @@
 ---
+layout: article
 title: American Shorthair
+categories: cat-types
 author: William Shaw
 date: Sept 17 2013
-categories: Cat Types, House Cats
+source: http://en.wikipedia.org/wiki/American_Shorthair
 
 ---
 
