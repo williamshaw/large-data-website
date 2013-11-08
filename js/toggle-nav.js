@@ -1,22 +1,60 @@
-// Get a reference to the top nav using its class
-var navTop = document.querySelector('.nav-top');
+var closeNav, insideNav, navBtn, navLinks, navTop, openNav, toggleNav, waitToCloseNav;
 
-// Wait for the user to click on the nav button
-document.querySelector('.nav-btn').addEventListener('click', function (e) {
-  // Javascript passes an event object for event listeners
-  // It's being captured in the `e` argument above
+navTop = $('.nav-top');
 
-  // Since .nav-btn is a link, by default it navigate somewhere
-  // `e.preventDefault()` will stop the link from doing what it normally does
-  e.preventDefault();
+navBtn = $('.nav-btn');
 
-  // Will toggle @data-state on .nav-top and .nav-btn
-  // @data-state is being used in CSS to style what the nav elements will look like
-  if (navTop.getAttribute('data-state') == 'expanded') {
-    navTop.setAttribute('data-state', 'collapsed');
-    this.setAttribute('data-state', 'inactive');
+navLinks = $('.nav-top a');
+
+insideNav = false;
+
+openNav = function() {
+  navTop.setAttribute('data-state', 'expanded');
+  return navBtn.setAttribute('data-state', 'active');
+};
+
+closeNav = function() {
+  navTop.setAttribute('data-state', 'collapsed');
+  return navBtn.setAttribute('data-state', 'inactive');
+};
+
+toggleNav = function() {
+  if (navTop.getAttribute('data-state') === 'expanded') {
+    return closeNav();
   } else {
-    navTop.setAttribute('data-state', 'expanded');
-    this.setAttribute('data-state', 'active');
+    return openNav();
   }
+};
+
+waitToCloseNav = function() {
+  return setTimeout(function() {
+    if (!insideNav) {
+      return closeNav();
+    }
+  }, 100);
+};
+
+navBtn.on('click', function(e) {
+  e.preventDefault();
+  return toggleNav();
+});
+
+navBtn.on('focus', function(e) {
+  insideNav = true;
+  return openNav();
+});
+
+navBtn.on('blur', function(e) {
+  insideNav = false;
+  return waitToCloseNav();
+});
+
+navLinks.on('focus', function(e) {
+  insideNav = true;
+  return openNav();
+});
+
+navLinks.on('blur', function(e) {
+  insideNav = false;
+  return waitToCloseNav();
 });
