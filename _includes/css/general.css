@@ -146,7 +146,8 @@ h3:focus {
   outline: 2px solid #000;
 }
 
-h3 a:visited {
+h3 a:visited,
+h3 a:link {
   color:  #00abc9;
 }
 
