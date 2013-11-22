@@ -4,6 +4,7 @@
   <meta charset=utf-8>
   <title>{{page.title}} — Cats rock find out why!; Ottawa Canada</title>
   <link href="{{site.baseurl}}/css/cat-facts.css" rel="stylesheet">
+  <script src="{{site.baseurl}}/js/modernizr.custom.js"/></script>
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{page.title}}">
@@ -63,7 +64,7 @@
   <footer class="grid">
   <div class="unit unit-s-1 unit-m-1 unit-l-1">
       <p class="contact-info">contact@cat-facts.ca</p>
-      <ol class="social-media">
+      <ul class="social-media">
         <li>
           <a href="#" rel="external">
               <img src="{{site.baseurl}}/img/facebook.svg" alt="facebook">
@@ -79,7 +80,14 @@
             <img src="{{site.baseurl}}/img/youtube.svg" alt="youtube">
           </a>
         </li>
-      </ol>
+      </ul>
+      <nav id="nav" class="nav-bottom" data-state="collapsed" role="naviation" id="nav navigation">
+          <ul>
+             <li><a href="{{site.baseurl}}/cat-health/" class="{% if page.categories == 'cat-types' %}current{% endif %}">Cat Types</a></li>
+             <li><a href="{{site.baseurl}}/cat-health/" class="{% if page.categories == 'cat-care' %} {% endif %}">Cat Care</a></li>
+             <li><a href="{{site.baseurl}}/cat-health/">Cats in Culture</a></li>
+          </ul>
+       </nav>
       <p class="copyright" role="contentinfo">&#169; 2013 cat-facts.ca. All Rights Reserved.</p>
   </div>
   </footer>
