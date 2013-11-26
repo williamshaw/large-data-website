@@ -10,7 +10,7 @@ The purpose of this school project is to learn as much about web design as I can
 
 William Shaw
 
-[shaw0107@algonquinlive.com](mailto:shaw0107@algonquinlive.com)	
+[shaw0107@algonquinlive.com](mailto:shaw0107@algonquinlive.com)
 
 ## Target audience
 
@@ -38,21 +38,21 @@ The website is targeted at kids who want to find out more information about thei
 
 - [x] Research
 - [x] Content organization
-- [ ] Tasks & priorities
-- [ ] Prototype
-- [ ] Style exploration
-- [ ] Writing exploration
-- [ ] Component guide
-- [ ] Homepage design
-- [ ] Inside pages
+- [x] Tasks & priorities
+- [x] Prototype
+- [x] Style exploration
+- [x] Writing exploration
+- [x] Component guide
+- [x] Homepage design
+- [x] Inside pages
 - [ ] Comments
-- [ ] Categories
+- [x] Categories
 - [ ] Search results
-- [ ] Accessibility
-- [ ] 404 page
-- [ ] SEO
-- [ ] Metadata
-- [ ] Speed
+- [x] Accessibility
+- [x] 404 page
+- [x] SEO
+- [x] Metadata
+- [x] Speed
 
 ## Licence
 
