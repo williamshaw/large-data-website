@@ -26,6 +26,13 @@
   white-space: nowrap;
 }
 
+/* Depends on Modernizr */
+.no-inlinesvg .nav-btn,
+.no-inlinesvg .nav-btn:link,
+.no-inlinesvg .nav-btn:visited {
+  background-image: url("../img/navtoggle.png");
+}
+
 .nav-btn:hover,
 .nav-btn:focus,
 .nav-btn:active {

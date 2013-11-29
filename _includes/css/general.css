@@ -66,6 +66,11 @@ header {
 	white-space: nowrap;
 }
 
+/* Depends on Modernizr */
+.no-inlinesvg .logo {
+  background: transparent url("../img/cat-facts-logo.png") no-repeat left top;
+}
+
 .search-bar {
 	float: right;
   margin-top: 0.5em;
