@@ -69,3 +69,13 @@ footer p {
 a:focus {
   outline: 2px solid #000;
 }
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -185px;
+}
+.footer, .push {
+  height: 185px;
+}

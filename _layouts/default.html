@@ -50,18 +50,20 @@
        <nav class="nav nav-top" data-state="collapsed" role="naviation" id="navigation">
           <ul>
              <li><a href="{{site.baseurl}}/cat-health/" class="{% if page.categories == 'cat-types' %}current{% endif %}">Cat Types</a></li>
-             <li><a href="{{site.baseurl}}/cat-health/" class="{% if page.categories == 'cat-care' %} {% endif %}">Cat Care</a></li>
+             <li><a href="{{site.baseurl}}/cat-health/" class="{% if page.categories == 'cat-care' %}current{% endif %}">Cat Care</a></li>
              <li><a href="{{site.baseurl}}/cat-health/">Cats in Culture</a></li>
           </ul>
        </nav>
       </div>
     </div>
   </header>
-  <main class="max-width" role="main" id="main">
+  <main class="max-width wrapper" role="main" id="main">
     {{content}}
+
+      <div class="push"></div>
   </main>
 
-  <footer class="grid">
+  <footer class="footer grid">
   <div class="unit unit-s-1 unit-m-1 unit-l-1">
       <p class="contact-info">contact@cat-facts.ca</p>
       <ul class="social-media">
@@ -84,7 +86,7 @@
       <nav id="nav" class="nav-bottom" data-state="collapsed" role="naviation" id="nav navigation">
           <ul>
              <li><a href="{{site.baseurl}}/cat-health/" class="{% if page.categories == 'cat-types' %}current{% endif %}">Cat Types</a></li>
-             <li><a href="{{site.baseurl}}/cat-health/" class="{% if page.categories == 'cat-care' %} {% endif %}">Cat Care</a></li>
+             <li class="nav-middle"><a href="{{site.baseurl}}/cat-health/" class="{% if page.categories == 'cat-care' %}current{% endif %}">Cat Care</a></li>
              <li><a href="{{site.baseurl}}/cat-health/">Cats in Culture</a></li>
           </ul>
        </nav>
@@ -101,7 +103,20 @@
 
   ga('create', 'UA-45978692-1', 'williamshaw.github.io');
   ga('send', 'pageview');
+</script>
 
+<script>
+if (!Modernizr.inlinesvg) {
+  ;(function () {
+    var imgs = document.getElementsByTagName('img')
+      , totalImgs = imgs.length
+      , i = 0
+
+      for (i = 0; i < totalImgs; i++) {
+        imgs[i].src = imgs[i].src.replace(/svg$/, 'png')
+      }
+  }())
+}
 </script>
 
 </body>

@@ -15,11 +15,23 @@ html {
 
   font: normal 100%/1.5 Helvetica, sans-serif;
   font-weight: 400;
+
+  background-color: #00abc9;
 }
 
 body {
-  margin: 0;
+  background-color: #fff;
+  margin: 0 auto;
   padding: 0;
+  max-width: 700px;
+}
+
+main {
+  background-color: #fff;
+}
+
+html, body {
+  height: 100%;
 }
 
 .flex-img {
@@ -281,5 +293,11 @@ a:focus {
    .error-p {
   font-size: 1.25em;
   min-height: 450px;
+  }
+}
+
+@media only screen and (min-width: 240px) {
+  body {
+    max-width: none;
   }
 }
