@@ -30,10 +30,6 @@ main {
   background-color: #fff;
 }
 
-html, body {
-  height: 100%;
-}
-
 .flex-img {
   display: block;
   width: 100%;
